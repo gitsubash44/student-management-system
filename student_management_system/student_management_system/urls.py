@@ -20,5 +20,9 @@ from student_management_app import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',views.showDemoPage, name="demo"),
+    path('demo',views.showDemoPage, name="demo"),
+    path('',views.showLoginPage, name="show_login"),
+    path('doLogin',views.doLogin, name="do_login"),
+    path('get_user_details',views.GetUserDetails, name="get_user_details"),
+    path('logout_user',views.LogoutUser, name="logout_user"),
 ]
