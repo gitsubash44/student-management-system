@@ -23,7 +23,7 @@ def doLogin(request):
             login(request, user)
             return HttpResponse("Email: " + request.POST.get("email") + " Password: " + request.POST.get("password"))
         else:
-            return HttpResponse("Invalid Login")
+            return HttpResponse("Invalid Login fix this")
 
     
 
